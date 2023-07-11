@@ -2,13 +2,16 @@ package com.example.hhgwebservice.service.posts;
 
 import com.example.hhgwebservice.domain.posts.Posts;
 import com.example.hhgwebservice.domain.posts.PostsRepository;
+import com.example.hhgwebservice.web.dto.PostsListResponseDto;
 import com.example.hhgwebservice.web.dto.PostsResponseDto;
 import com.example.hhgwebservice.web.dto.PostsSaveRequestDto;
 import com.example.hhgwebservice.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor //final, not null
 @Service
@@ -37,4 +40,11 @@ public class PostsService {
 
         return new PostsResponseDto(entity);
     }
+
+    @Transactional(readOnly = true)
+    public List<PostsListResponseDto> findAllDesc() {
+        return postsRepository.findAllDesc().stream().map(PostsListResponseDto::new)
+                .collect(Collectors.toList());
+    }
+
 }
