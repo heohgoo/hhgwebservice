@@ -1,9 +1,11 @@
 package com.example.hhgwebservice.web;
 
+import com.example.hhgwebservice.config.auth.LoginUser;
 import com.example.hhgwebservice.config.auth.dto.SessionUser;
 import com.example.hhgwebservice.service.posts.PostsService;
 import com.example.hhgwebservice.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
+import org.h2.engine.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -16,13 +18,10 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class IndexController {
     private final PostsService postsService;
-    private final HttpSession httpSession;
-
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
 
         if (user != null) {
             model.addAttribute("userName", user.getName());
