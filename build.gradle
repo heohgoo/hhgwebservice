@@ -6,8 +6,7 @@ plugins {
 }
 
 jar {
-    enabled = true
-    archiveClassifier = '' //use empty string
+    enabled = false
 }
 
 
