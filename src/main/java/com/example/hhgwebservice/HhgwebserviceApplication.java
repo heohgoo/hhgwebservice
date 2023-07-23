@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 //AWS EC2에서 Linux기반 AMI로 배포 완료
 //MariaDB로 AWS RDS 연동 완료
 //테스트 환경 구성
+//AWS RDS에 mysql.sql, posts, users 테이블 생성
 
 
 //@EnableJpaAuditing => 테스트 에러로 분리
