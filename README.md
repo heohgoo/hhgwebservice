@@ -7,4 +7,7 @@
 http://ec2-3-35-191-60.ap-northeast-2.compute.amazonaws.com:8080/
 
 
-Spring/SpringBoot v2.6.6(Build:Gradle), Mustache(Template Engine), AWS RDS(MariaDB), AWS EC2
+`Spring/SpringBoot v2.6.6(Build:Gradle)`
+`Mustache(Template Engine)` 
+`AWS RDS(MariaDB)` 
+`AWS EC2`
