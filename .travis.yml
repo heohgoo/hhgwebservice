@@ -1,4 +1,6 @@
 language : java
+
+#JDK 변경
 jdk:
   - openjdk-1.8
 
