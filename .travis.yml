@@ -13,6 +13,10 @@ cache :
     - '$HOME/ .m2/repository'
     - '$HOME/ .gradle'
 
+#Gradlew에 접근하지 못하는 문제 해결
+before_install:
+  - chmod +x gradlew
+
 #master 브랜치에 푸시되었을 때 수행하는 명령어
 script: "./gradlew clean build"
 
