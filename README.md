@@ -3,6 +3,8 @@
 
 😀배포 : AWS EC2(Amazon Linux 2023) 
 
+😁CI : Travis CI
+
 
 http://ec2-3-35-191-60.ap-northeast-2.compute.amazonaws.com:8080/
 
@@ -11,3 +13,6 @@ http://ec2-3-35-191-60.ap-northeast-2.compute.amazonaws.com:8080/
 `Mustache(Template Engine)` 
 `AWS RDS(MariaDB)` 
 `AWS EC2`
+`Travis CI`
+
+
