@@ -31,7 +31,7 @@ before_deploy:
   #해당 디렉토리로 zip 파일 이동 => 수정했음
   - mv springboot2-hhgwebservice.zip deploy/springboot2-hhgwebservice.zip
 
-#beforebuild 에러 => codedeploy 에이전트 다시 설치
+#beforebuild 에러 => codedeploy 에이전트 다시 설치, ec2 인스턴스 재부팅
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY
