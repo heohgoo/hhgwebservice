@@ -28,7 +28,7 @@ before_deploy:
   - zip -r springboot2-hhgwebservice *
   #deploy 디렉토리를 Travis CI가 실행 중인 위치에서 생성
   - mkdir -p deploy
-  #해당 디렉토리로 zip 파일 이동
+  #해당 디렉토리로 zip 파일 이동 => 수정
   - mv springboot2-hhgwebservice.zip deploy/springboot2-hhgwebservice.zip
 
 deploy:
