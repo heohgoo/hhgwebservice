@@ -47,11 +47,12 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
     bucket: hhgwebservice-springboot2-build #S3 버킷
     key: springboot2-hhgwebservice.zip #빌드 파일을 압축해서 전달
-    bundle_type: zip
+    bundle_type: zip #zip 파일
     application: springboot2-hhgwebservice #CodeDeploy 애플리케이션
     deployment_group: springboot2-hhgwebservice-group #CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
+
 #CI => Email 알림
 notifications:
   email :
