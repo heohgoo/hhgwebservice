@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 //테스트 환경 구성
 //AWS RDS에 mysql.sql, posts, users 테이블 생성
 //구글 웹 콘솔과 네이버 개발자 센터에 EC2 도메인을 등록하여 작동하도록 함
+//TCP 인바운드 규칙 변경
 
 
 //@EnableJpaAuditing => 테스트 에러로 분리
