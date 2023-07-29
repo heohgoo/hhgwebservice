@@ -18,6 +18,7 @@ public class ProfileController {
         List<String> profiles = Arrays.asList(env.getActiveProfiles());
         //현재 실행 중인 ActiveProfile을 모두 가져온다.
         //즉 real,oauth,real-db 등이 활성화되어 있으면 3개가 모두 담겨 있다.
+        //real, real1, real2
         List<String> realProfiles = Arrays.asList("real", "real1", "real2");
         String defaultProfile = profiles.isEmpty()? "default"
                 : profiles.get(0);
