@@ -19,7 +19,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 //url별 권한 관리를 설정
-                .antMatchers("/", "/css/**", "/images/**", "/js/**", "/h2-console/**").permitAll()
+                .antMatchers("/", "/css/**", "/images/**", "/js/**", "/h2-console/**", "/profile").permitAll()
                 //permitAll-전체 열람 권한, antMatchers-권한 관리 대상 지정 옵션
                 .antMatchers("/api/v1/**").hasRole(Role.USER.name())
                 //위와 같은 주소는 USER 권한을 가진 사람만 API 사용 가능
