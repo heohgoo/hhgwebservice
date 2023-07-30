@@ -10,9 +10,8 @@ function switch_proxy() {
 
   echo "> 전환할 Port: $IDLE_PORT"
   echo "> Port 전환"
-  echo "set \$service_url http://127.0.0.1:${IDLE_PORT};" |
+  echo "set \$service_url http://127.0.0.1:${IDLE_PORT};" | sudo tee /etc/nginx/conf.d/service-url.inc
   #하나의 문장을 구성해 파이프라인(|)으로 넘겨주기 위해 echo 사용
-sudo tee /etc/nginx/conf.d/service-url.inc
 
   echo "> 엔진엑스 reload"
   sudo service nginx reload
