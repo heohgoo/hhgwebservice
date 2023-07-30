@@ -4,7 +4,7 @@
 # 쉬고 있는 profile 찾기: real1이 사용 중이라면, real2가 쉬고 있고, 반대면 real1이 쉬고 있다.
 
 function find_idle_profile() {
-    RESPONSE_CODE=$(curl -s -o /dev/null -w "%(http_code)" http://localhost/profile)
+    RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost/profile)
     # 현재 엔진엑스가 바라보고 있는 스프링 부트가 정상적으로 수행 중인지 확인, 응답값을 HttpStatus로 받는다.
 
     if [ $(RESPONSE_CODE) -ge 400 ] #RESPONSE_CODE가 오류 코드를 반환한다면 400~503 사이로 반환하니, 모두 에러로 간주하고 real2를 profile로 사용
