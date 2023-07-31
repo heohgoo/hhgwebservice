@@ -1,5 +1,5 @@
 # hhgwebservice
-이동욱님의 '스프링 부트와 AWS로 혼자 구현하는 웹 서비스' 저서를 기반으로 백엔드 개발을 공부하기 위한 프로젝트입니다.
+이동욱님의 `스프링 부트와 AWS로 혼자 구현하는 웹 서비스` 저서를 기반으로 백엔드 개발을 공부하기 위한 프로젝트입니다.
 
 ![image](https://github.com/heohgoo/hhgwebservice/assets/95553132/eb8a89e5-373a-4380-9512-cf999ae66177)
 
