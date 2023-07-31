@@ -20,8 +20,7 @@ public class ProfileController {
         //즉 real,oauth,real-db 등이 활성화되어 있으면 3개가 모두 담겨 있다.
         //real, real1, real2
         List<String> realProfiles = Arrays.asList("real", "real1", "real2");
-        String defaultProfile = profiles.isEmpty()? "default"
-                : profiles.get(0);
+        String defaultProfile = profiles.isEmpty()?"default":profiles.get(0);
 
         return profiles.stream()
                 .filter(realProfiles::contains)
