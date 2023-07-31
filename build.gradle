@@ -11,7 +11,8 @@ jar {
 
 
 group = 'com.example'
-version = '1.0.1-SNAPSHOT'
+//잦은 배포로 Jar파일명이 겹칠 수 있으므로 자동으로 버전값이 변경될 수 있도록 조치
+version = '1.0.1-SNAPSHOT-'+new Date().format("yyyyMMddHHmmss")
 
 
 java {
