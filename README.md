@@ -12,7 +12,9 @@
 😃무중단 배포 : nginx
 
 
-http://ec2-3-35-191-60.ap-northeast-2.compute.amazonaws.com/
+~~http://ec2-3-35-191-60.ap-northeast-2.compute.amazonaws.com/~~
+
+ec2 인스턴스 중지
 
 
 `Spring/SpringBoot v2.6.6(Build:Gradle)`
