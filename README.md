@@ -5,11 +5,15 @@
 
 
 
-😀배포 : AWS EC2(Amazon Linux 2023) 
+😀배포 : AWS CodeDeploy, AWS EC2(Amazon Linux 2023)
 
-😁배포 자동화 : Travis CI, AWS S3, AWS CodeDeploy
+😁CI/CD : Travis CI
 
-😃무중단 배포 : nginx
+😃무중단 배포 서버 : Nginx
+
+
+
+AWS CodeDeploy만으로도 배포가 가능하지만 빌드와 배포를 분리하여 Jar파일을 재사용할 수 있게 하여 확장성을 늘리고자 S3에 Jar파일을 전달하거나 전달받을 수 있도록 하였습니다.
 
 
 
