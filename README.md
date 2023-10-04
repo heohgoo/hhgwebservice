@@ -5,9 +5,9 @@
 
 
 
-😀배포 : AWS CodeDeploy, AWS EC2(Amazon Linux 2023)
+😀서버 : AWS EC2(Amazon Linux 2023)
 
-😁CI/CD : Travis CI
+😁CI/CD : Travis CI, AWS CodeDeploy
 
 😃무중단 배포 서버 : Nginx(리버스 프록시) => 실제 요청에 대한 처리가 뒷단의 웹 애플리케이션 서버가 처리하게 한다.
 
