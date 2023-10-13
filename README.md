@@ -5,6 +5,15 @@
 
 
 
+`Spring/SpringBoot v2.6.6(Build:Gradle)`
+`Mustache(Template Engine)` 
+`AWS RDS(MariaDB)/EC2/S3/CodeDeploy` 
+`Travis CI`
+`Nginx`
+
+
+
+
 😀서버 : AWS EC2(Amazon Linux 2023)
 
 😁CI/CD : Travis CI, AWS CodeDeploy
@@ -13,17 +22,12 @@
 
 
 
-AWS CodeDeploy만으로도 배포가 가능하지만 빌드와 배포를 분리하여 Jar파일을 재사용할 수 있게 하여 확장성을 늘리고자 S3에 Jar파일을 전달하거나 전달받을 수 있도록 하였습니다.
+AWS CodeDeploy만으로도 배포가 가능하지만 빌드와 배포를 분리하여 Jar파일을 재사용할 수 있게 하여 유지보수성과 확장성을 늘리고자 S3에 Jar파일을 전달하거나 전달받을 수 있도록 하였다.
 
 
 
 
 
-`Spring/SpringBoot v2.6.6(Build:Gradle)`
-`Mustache(Template Engine)` 
-`AWS RDS(MariaDB)/EC2/S3/CodeDeploy` 
-`Travis CI`
-`Nginx`
 
 
 
